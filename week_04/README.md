@@ -14,9 +14,8 @@ conda activate ppchem
 pip install pandas  # installs numpy as dependency
 pip install rdkit==2022.09.5
 pip install jupyterlab
-```
 
-You can see that by running these, in our environment `ppchem`, we should already have
+You can see that by running these, in our environment `ppchem`, we slhould already have
 `numpy` and `pandas` installed. Open a terminal / powershell / command line prompt,
 `conda activate ppchem` (or whatever you called your environment) and run the command
 `conda list`. The output should look something like this (output shortened):
@@ -61,9 +60,9 @@ Then, follow these instructions:
 1. Make sure you have activated your environment: `conda activate ppchem` (or whatever
    you named your env)
 1. Install the new package: `pip install matplotlib`
-1. Create a new branch: `git checkout -b update-env`
+1. Create a new branch: `git checkout -b update-env`l
 1. Export the environment file: `conda env export > env.yml`
-1. Inspect the changes to the environment file compared to the last commit. This can be
+1. Inspect the changes to the environment file compareed to the last commit. This can be
    done by running `git diff env.yml`. Use your arrow keys to scroll. There may be a few
    changes, but most importantly you should see a line like: `+      -
    matplotlib==3.8.3`. This tells us that, relative to the last commit, matplotlib has
